@@ -1,0 +1,10 @@
+service: codebuild-sns-chat-webhook
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  sendNotification:
+    handler: index.handler
+
